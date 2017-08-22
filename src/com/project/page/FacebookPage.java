@@ -15,7 +15,8 @@ public class FacebookPage extends BasePage {
 	@FindBy(id = "pass")
 	private WebElement pass;
 
-	public WebDriver driver;
+	public WebDriver driver; 
+	
 
 	public FacebookPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -33,6 +34,7 @@ public class FacebookPage extends BasePage {
 
 	public void submitPass() {
 		pass.submit();
+		
 		Assert.assertTrue(true);
 	}
 
