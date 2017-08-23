@@ -11,7 +11,7 @@ public class FaceBookLogin extends BaseTest {
 	public void testFaceBookLogin() {
 		FacebookPage f = new FacebookPage(driver);
 		f.setEmail("ks.madhan7@gmail.com");
-		f.setPass("skyblue27");
+		f.setPass("skyblue28");
 		f.submitPass();
 	}
 }
