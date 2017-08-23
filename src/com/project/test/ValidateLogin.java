@@ -1,12 +1,18 @@
 package com.project.test;
 
-public class ValidateLogin {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
-		
-		System.out.println("Hello boss");
-		
-		
-		
+import com.project.page.FacebookPage;
+
+import generic.BaseTest;
+
+public class ValidateLogin extends BaseTest {
+
+	@Test(priority = 1, groups = { "login" })
+	public void testFaceBookLogin() {
+		FacebookPage f = new FacebookPage(driver);
+		f.setEmail("ks.madhan7@gmail.com");
+		f.setPass("skyblue28");
+		f.submitPass();
 	}
 }
