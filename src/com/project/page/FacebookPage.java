@@ -1,6 +1,5 @@
 package com.project.page;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,8 +33,6 @@ public class FacebookPage extends BasePage {
 
 	public void submitPass() {
 		pass.submit();
-		
-		Assert.assertTrue(true);
 	}
 
 }
