@@ -1,9 +1,7 @@
 package com.project.test;
 
 import org.testng.annotations.Test;
-
 import com.project.page.FacebookPage;
-
 import generic.BaseTest;
 
 public class FaceBookLogin extends BaseTest {
