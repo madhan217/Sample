@@ -13,6 +13,7 @@ public class FaceBookLogin extends BaseTest {
 		f.setEmail("ks.madhan7@gmail.com");
 		f.setPass("skyblue28");
 		f.submitPass();
+		
 
 	}
 }
