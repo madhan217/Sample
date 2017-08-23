@@ -8,6 +8,6 @@ public class Madhan {
 	@Test
 	public void openApp()
 	{
-		Reporter.log("Ha ha ha");
+		Reporter.log("Ha ha ha , Hello");
 	}
 }
