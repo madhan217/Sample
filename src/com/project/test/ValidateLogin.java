@@ -12,7 +12,7 @@ public class ValidateLogin extends BaseTest {
 	public void testFaceBookLogin() {
 		FacebookPage f = new FacebookPage(driver);
 		f.setEmail("ks.madhan7@gmail.com");
-		f.setPass("");
+		f.setPass(" ");
 		f.submitPass();
 	}
 }
