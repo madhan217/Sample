@@ -6,10 +6,10 @@ import com.project.page.FacebookPage;
 
 import generic.BaseTest;
 
-public class ValidateLogin extends BaseTest {
+public class ValidLogin extends BaseTest {
 
 	@Test(priority = 1, groups = { "login" })
-	public void testFaceBookLogin() {
+	public void testValidLogin() {
 		FacebookPage f = new FacebookPage(driver);
 		f.setEmail("");
 		f.setPass("");
