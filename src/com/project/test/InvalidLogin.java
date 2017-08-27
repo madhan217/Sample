@@ -11,8 +11,8 @@ public class InvalidLogin extends BaseTest{
 	@Test(priority = 1, groups = { "login" })
 	public void testInvalidLogin() {
 		FacebookPage f = new FacebookPage(driver);
-		f.setEmail("");
-		f.setPass("");
+		f.setEmail("ks.madhan7@gmail.com");
+		f.setPass("skyblue");
 		f.submitPass();
 		Assert.fail();
 	}
