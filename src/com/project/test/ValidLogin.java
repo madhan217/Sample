@@ -11,8 +11,8 @@ public class ValidLogin extends BaseTest {
 	@Test(priority = 0, groups = { "login" })
 	public void testValidLogin() {
 		FacebookPage f = new FacebookPage(driver);
-		f.setEmail("ks.madhan7@gmail.com");
-		f.setPass("skyblue28");
+		f.setEmail("");
+		f.setPass("");
 		f.submitPass();
 		f.verifyNameisPresent();
 	}
