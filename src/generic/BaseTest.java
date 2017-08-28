@@ -2,8 +2,8 @@ package generic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public abstract class BaseTest implements IAutoConst {
 
@@ -12,14 +12,14 @@ public abstract class BaseTest implements IAutoConst {
 	}
 	public WebDriver driver;
 
-	@BeforeTest
+	@BeforeMethod
 	public void openApplication() {
 		driver = new ChromeDriver();
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.facebook.com/");
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void closeApplication() {
 		driver.close();
 	}
