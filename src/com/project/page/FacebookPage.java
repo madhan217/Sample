@@ -41,7 +41,10 @@ public class FacebookPage extends BasePage {
 	
 	public void verifyNameisPresent()
 	{
-		Assert.assertTrue(nameIsDisplayed.isDisplayed());
+		if(!nameIsDisplayed.isDisplayed())
+		{
+			Assert.fail();
+		}
 	}
 
 }
