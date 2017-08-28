@@ -8,7 +8,7 @@ import generic.BaseTest;
 
 public class ValidLogin extends BaseTest {
 
-	@Test(priority = 1, groups = { "login" })
+	@Test(priority = 0, groups = { "login" })
 	public void testValidLogin() {
 		FacebookPage f = new FacebookPage(driver);
 		f.setEmail("ks.madhan7@gmail.com");
