@@ -1,6 +1,5 @@
 package com.project.test;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.project.page.FacebookPage;
@@ -14,6 +13,5 @@ public class InvalidLogin extends BaseTest{
 		f.setEmail("ks.madhan7@gmail.com");
 		f.setPass("skyblue");
 		f.submitPass();
-//		Assert.fail();
 	}
 }
