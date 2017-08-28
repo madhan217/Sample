@@ -13,5 +13,6 @@ public class InvalidLogin extends BaseTest{
 		f.setEmail("ks.madhan7@gmail.com");
 		f.setPass("skyblue");
 		f.submitPass();
+		f.verifyNameisPresent();
 	}
 }
